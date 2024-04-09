@@ -1,0 +1,4 @@
+construct
+pyftdi~=0.13.4
+pylibftdi
+pyserial

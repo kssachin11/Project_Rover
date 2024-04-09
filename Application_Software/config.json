@@ -1,0 +1,17 @@
+{
+	"version": "1.0.0",
+	"Debug": true,
+	"mqtt":
+		{
+            "broker": "172.22.20.98",
+            "port": 1883,
+            "qos": 2
+		},
+	"spi":
+		{
+			"bus": 0,
+			"device": 0,
+			"freq": 500000,
+			"mode": 0
+		}
+}

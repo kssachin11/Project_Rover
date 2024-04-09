@@ -1,0 +1,30 @@
+{
+	"version": "1.0.0",
+	"Debug": true,
+	"dgps":
+		{
+            "IP_add": "195.37.48.193",
+            "port": 55555
+		},
+	"base":
+		{
+            "IP_add": "195.37.48.235",
+            "port": 55555
+		},
+	"mqtt":
+		{
+			"broker": "172.22.18.187",
+			"port": 1883,
+			"qos": 2
+		},
+	"roboclaw":
+		{
+			"bus": "/dev/ttyACM0",
+			"baud": 115200
+		},
+	"laser":
+		{
+			"port": "COM10",
+			"baud": 115200
+		}
+}
