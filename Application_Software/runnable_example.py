@@ -1,8 +1,11 @@
 import json
 from matplotlib import pyplot as plt
-from Layers.L1_App.navigation.map import Map
-from Layers.L1_App.navigation.metric_position import MetricPosition
-from Layers.L1_App.navigation.navigator import Navigator
+from Layer_3.navigation.map import Map
+from Layer_3.navigation.metric_position import MetricPosition
+from Layer_3.navigation.navigator import Navigator
+#from Layer_1.driver.different_speed import *
+#from Layer_1.driver.roboclaw_3 import Roboclaw
+import subprocess
 
 
 map = Map(map='maps\map6_small.json')
@@ -20,5 +23,6 @@ print(f'get_orientation(): {navigator.get_orientation()}')
 print(f'get_position(): {navigator.get_position()}')
 
 
-plt.imshow(navigator._astar.path_matrix)
-plt.show()
+#plt.imshow(navigator._astar.path_matrix)
+#plt.show()
+subprocess.Popen(['python', 'different_speed.py'])
